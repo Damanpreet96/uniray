@@ -1001,7 +1001,7 @@ table p {
   color: #ffd868;
 }
 .header-navigation-area .main-menu.nav > li > a {
-  color: #fff;
+  color: #000;
   font-size: 16px;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 400;
@@ -1043,6 +1043,12 @@ table p {
 .header-navigation-area .main-menu.nav > li:first-child > a {
   margin-left: 0;
   padding-left: 0;
+}
+.header-action-area i {
+    color: #0190f0 !important;
+}
+.shopping-wishlist i {
+    color: red !important;
 }
 .header-navigation-area .main-menu.nav > li:last-child {
   margin-right: 0;
@@ -2578,27 +2584,27 @@ table p {
   width: 100%;
 }
 .product-category-item .thumb:before {
-  border: 2px dashed #721b65;
-  content: "";
-  position: absolute;
-  pointer-events: none;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: 100%;
-  z-index: 10;
-  opacity: 0;
-  animation: spinAround 20s linear infinite;
-  -webkit-animation: spinAround 20s linear infinite;
-  -moz-animation: spinAround 20s linear infinite;
-  -ms-animation: spinAround 20s linear infinite;
-  -o-animation: spinAround 20s linear infinite;
-  transition: all 0.3s ease-out;
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -ms-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
+    border: 2px dashed #7ecd02;
+    content: "";
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 100%;
+    z-index: 10;
+    opacity: 0;
+    animation: spinAround 20s linear infinite;
+    -webkit-animation: spinAround 20s linear infinite;
+    -moz-animation: spinAround 20s linear infinite;
+    -ms-animation: spinAround 20s linear infinite;
+    -o-animation: spinAround 20s linear infinite;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
 }
 .product-category-item .content {
   margin-top: 14px;
