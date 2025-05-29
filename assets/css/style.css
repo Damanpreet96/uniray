@@ -878,7 +878,7 @@ table p {
   z-index: 1;
 }
 .section-title.shape-left:before {
-  content: url("../img/icons/sec.webp");
+  content: url("../img/icons/Cow.webp");
   position: absolute;
   left: 0;
   top: -16px;
@@ -894,16 +894,16 @@ table p {
   z-index: 1;
 }
 .section-title.shape-center:before {
-  content: url("../img/icons/sec.webp");
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  -webkit-transform: translate(-50%, 0%);
-  -moz-transform: translate(-50%, 0%);
-  -ms-transform: translate(-50%, 0%);
-  -o-transform: translate(-50%, 0%);
-  top: -11px;
-  z-index: -1;
+    content: url(../img/icons/Cow.webp);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+    -moz-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    -o-transform: translate(-50%, 0%);
+    top: -35px;
+    z-index: -1;
 }
 @media only screen and (max-width: 1199px) {
   .section-title.shape-center:before {
