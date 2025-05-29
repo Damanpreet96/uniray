@@ -889,6 +889,10 @@ table p {
     display: none;
   }
 }
+.about-content p {
+    margin-right: -2px;
+    text-align: justify;
+}
 .section-title.shape-center {
   position: relative;
   z-index: 1;
