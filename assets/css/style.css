@@ -1010,10 +1010,10 @@ table p {
   margin-right: 0;
 }
 .header-navigation-area .main-menu.nav > li.active > a {
-  color: #ffd868;
+  color: #34b7f1;
 }
 .header-navigation-area .main-menu.nav > li.active > a:before {
-  color: #ffd868;
+  color: #34b7f1;
 }
 .header-navigation-area .main-menu.nav > li > a {
   color: #000;
@@ -1045,7 +1045,7 @@ table p {
   -o-transition: all 0.3s ease-out;
 }
 .header-navigation-area .main-menu.nav > li > a:hover {
-  color: #ffd868;
+  color: #34b7f1 !important;
 }
 .header-navigation-area .main-menu.nav > li > a:hover:after {
   bottom: auto;
@@ -7666,7 +7666,7 @@ table p {
   }
 }
 .footer-area .nav-menu li a:hover {
-  color: #ffd868;
+  color: #34b7f1;
 }
 
 .footer-main {
@@ -8235,6 +8235,7 @@ form textarea:focus {
   height: 100%;
   top: 0;
   left: 0;
+  bottom: 0;
 }
 button#slide-btn {
     background-color: #7ecd02;
