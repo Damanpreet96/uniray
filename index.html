@@ -38,6 +38,49 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 </head>
+<style>
+  body, .page-wrapper, .main, .page-content {
+  transform: none !important;
+  perspective: none !important;
+  backface-visibility: visible !important;
+  position: static !important;
+  height: auto !important;
+  overflow: visible !important;
+}
+
+/* Force floating buttons to stick to viewport */
+.floating-buttons {
+  position: fixed !important;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  pointer-events: auto;
+}
+
+/* Style each button */
+.float-btn {
+  background-color: #25d366; /* WhatsApp green */
+  color: white;
+  text-align: center;
+  padding: 12px;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+  z-index: 9999;
+}
+
+.call-btn {
+  background-color: #34b7f1; /* Call button blue */
+}
+
+.float-btn:hover {
+  transform: scale(1.1);
+}
+</style>
 
 <body>
 
@@ -115,17 +158,17 @@
   
   <main class="main-content">
     <!--== Start Hero Area Wrapper ==-->
-    <section class="home-slider-area">
+    <!-- <section class="home-slider-area">
       <div class="swiper home-slider-container default-slider-container">
         <div class="swiper-wrapper home-slider-wrapper slider-default">
-          <div class="swiper-slide">
-            <div class="slider-content-area" data-bg-img="assets/img/Banner-1.jpg">
-              <div class="container">
+          <div class="swiper-slide pc">
+            <div class="slider-content-area" data-bg-img="assets/img/Banner-1.jpg"> -->
+              <!-- <div class="container">
                 <div class="slider-container">
                   <div class="row justify-content-between align-items-center">
                     <div class="col-sm-6 col-md-6">
                       <div class="slider-content">
-                        <!-- <div class="content">
+                        <div class="content">
                           <div class="sub-title-box">
                             <h5 class="sub-title">Compassionate and High Quality Medicine</h5>
                           </div>
@@ -135,23 +178,28 @@
                           <div class="btn-box">
                             <a class="btn-theme text-dark" href="#">Contact Us</a>
                           </div>
-                        </div> -->
+                        </div>
                       </div>
                     </div>
-                    <!-- <div class="col-sm-6 col-md-6">
+                    <div class="col-sm-6 col-md-6">
                       <div class="slider-thumb mousemove">
                         <div class="thumb">
                           <img src="assets/img/slider/slider-01.webp" width="585" height="579" alt="Image-HasTech">
                           <div class="shape-one"></div>
                         </div>
                       </div>
-                    </div> -->
+                    </div>
                   </div>
                 </div>
-              </div>
+              </div> -->
+            <!-- </div>
+          </div> -->
+          <!-- <div class="swiper-slide mobile">
+            <div class="slider-content-area" data-bg-img="assets/img/Banner-1.jpg">
+             
             </div>
-          </div>
-          <div class="swiper-slide">
+          </div> -->
+          <!-- <div class="swiper-slide">
             <div class="slider-content-two-area" data-bg-img="assets/img/slider/slider-02.webp">
               <div class="container">
                 <div class="slider-container">
@@ -164,11 +212,11 @@
                           </div>
                           <div class="title-box">
                             <h2 class="title">Products We Manufacture</h2>
-                          </div>
+                          </div> -->
                           <!-- <div class="desc-box">
                             <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, seddo do eiusmod tempor incidid ut labore.</p>
                           </div> -->
-                          <div class="btn-box">
+                          <!-- <div class="btn-box">
                             <a class="btn-theme text-dark" href="#">Contact Us</a>
                           </div>
                         </div>
@@ -180,10 +228,10 @@
               <div class="home-overlay"></div>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <!--== Add Swiper Arrows ==-->
-        <div class="swiper-btn-wrap">
+        <!-- <div class="swiper-btn-wrap">
           <div class="swiper-btn-prev">
             <i class="pe-7s-angle-left"></i>
           </div>
@@ -192,8 +240,46 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!--== End Hero Area Wrapper ==-->
+
+    <section class="home-slider-area">
+  <div class="swiper home-slider-container default-slider-container">
+    <div class="swiper-wrapper home-slider-wrapper slider-default">
+
+      <!-- Banner 1 for Large Screens -->
+      <div class="swiper-slide d-none d-lg-block">
+        <div class="slider-content-area" data-bg-img="assets/img/Banner-1.jpg"></div>
+      </div>
+
+      <!-- Banner 1 for Small Screens -->
+      <div class="swiper-slide d-block d-lg-none">
+        <div class="slider-content-area" data-bg-img="assets/img/Banner-1-mobile-view.png"></div>
+      </div>
+
+      <!-- Banner 2 (Common for all screen sizes) -->
+     <div class="swiper-slide d-none d-lg-block">
+        <div class="slider-content-area" data-bg-img="assets/img/Product-Banner.png"></div>
+      </div>
+       <!-- Banner 1 for Small Screens -->
+      <div class="swiper-slide d-block d-lg-none">
+        <div class="slider-content-area" data-bg-img="assets/img/Mobile-app-banner-1.jpg"></div>
+      </div>
+
+
+    </div>
+
+    <!--== Add Swiper Arrows ==-->
+    <div class="swiper-btn-wrap">
+      <div class="swiper-btn-prev">
+        <i class="pe-7s-angle-left"></i>
+      </div>
+      <div class="swiper-btn-next">
+        <i class="pe-7s-angle-right"></i>
+      </div>
+    </div>
+  </div>
+</section>
 
     <!--== Start about us Area Wrapper ==-->
     <section class="about-area" id="about">
@@ -822,6 +908,7 @@ A Veterinary Third Party Manufacturing company has a specialty in manufacturing 
   <!--== End Aside Menu ==-->
 </div>
 
+
 <!--=======================Javascript============================-->
 
 <!--=== jQuery Modernizr Min Js ===-->
@@ -849,9 +936,7 @@ A Veterinary Third Party Manufacturing company has a specialty in manufacturing 
 <script src="assets/js/custom.js"></script>
 
 <!--=== owl slider ===-->
-<script src="assets/js/slider.js">
-
- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"> </script>
+<script src="assets/js/slider.js"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script>
@@ -900,6 +985,16 @@ window.addEventListener('click', function(event) {
     </form>
   </div>
 </div>
+<!-- Floating Buttons -->
+<div class="floating-buttons">
+  <a href="tel:+919805060580" class="float-btn call-btn" title="Call Us">
+   <img src="assets/img/call-float.png" alt="call">
+  </a>
+  <a href="https://wa.me/919805060580" target="_blank" class="float-btn whatsapp-btn" title="WhatsApp">
+    <img src="assets/img/whatsapp-float.png" alt="call">
+  </a>
+</div>
+
 
 
 </body>
