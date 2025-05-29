@@ -931,6 +931,8 @@ A Veterinary Third Party Manufacturing company has a specialty in manufacturing 
 <!--=== owl slider ===-->
 <script src="assets/js/slider.js"></script>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script>
 function openModal() {
@@ -987,6 +989,37 @@ window.addEventListener('click', function(event) {
     <img src="assets/img/whatsapp-float.png" alt="call">
   </a>
 </div>
+<div class="contact-form">
+  <button id="open">Contact Me</button>
+</div><!-- .container -->
+
+<div class="slidein">
+  <span class="close"><i class="fa fa-times"></i></span>
+  <form>
+    <h2>Contact Form</h2>
+    <input type="text" name="name" placeholder="Enter your name" autofocus />
+    <input type="email" name="email" placeholder="Enter your email" autofocus />
+    <textarea placeholder="Place your comments here..." autofocus></textarea>
+    <br>
+    <button id="slide-btn">Submit</button>
+  </form>
+</div>
+<script>
+var $overlay = $('<div class="overlay"></div>');
+$('body').append($overlay);
+
+$('#open').click(function(event) {
+    event.preventDefault();
+    $overlay.fadeIn(300);
+    $('.slidein').show('slide', { direction: 'right' }, 200);
+});
+
+$('.overlay, .close').click(function() {
+    $('.slidein').hide('slide', { direction: 'right' }, 200);
+    $overlay.fadeOut(300);
+});
+
+</script>
 
 
 
