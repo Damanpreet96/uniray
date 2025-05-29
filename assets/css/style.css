@@ -2612,7 +2612,7 @@ table p {
     bottom: 0;
     border-radius: 100%;
     z-index: 10;
-    opacity: 0;
+    opacity: 1;
     animation: spinAround 20s linear infinite;
     -webkit-animation: spinAround 20s linear infinite;
     -moz-animation: spinAround 20s linear infinite;
@@ -2640,7 +2640,7 @@ table p {
   color: #000;
 }
 .product-category-item:hover .thumb:before {
-  opacity: 1;
+  opacity: 0;
 }
 .product-category-item:hover .thumb img {
   transform: scale(1.07);
