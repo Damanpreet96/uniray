@@ -1009,22 +1009,23 @@ table p {
   color: #34b7f1;
 }
 .header-navigation-area .main-menu.nav > li > a {
-  color: #000;
-  font-size: 16px;
-  font-family: "Nunito Sans", sans-serif;
-  font-weight: 400;
-  height: 56px;
-  line-height: 56px;
-  letter-spacing: 0;
-  position: relative;
-  margin: 0 13px;
-  padding: 0 13px;
-  text-transform: uppercase;
-  transition: all 0.3s ease-out;
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -ms-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
+    color: #000;
+    font-size: 17px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    height: 56px;
+    line-height: 56px;
+    letter-spacing: 0;
+    position: relative;
+    margin: 0 13px;
+    font-weight: 600;
+    padding: 0px 8px;
+    text-transform: uppercase;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
 }
 .header-navigation-area .main-menu.nav > li > a span {
   position: relative;
@@ -5340,6 +5341,7 @@ table p {
   background-color: #fff;
   color: #000;
   font-size: 16px;
+  font-weight: 700;
   text-transform: uppercase;
   display: inline-block;
   -webkit-box-shadow: none;
