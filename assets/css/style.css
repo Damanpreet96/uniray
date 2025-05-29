@@ -8035,7 +8035,6 @@ table p {
   
   
   &:hover {
-    transform: translateY(-5px);
     box-shadow: 0 3px 10px rgba(color-dark, .3);
     
     .fa {
@@ -8158,4 +8157,4 @@ button.owl-next {
 a.btn-theme.text-dark {
     color: #fff !important;
 }
-/* Ensure the body does not interfere with position: fixed */
+
