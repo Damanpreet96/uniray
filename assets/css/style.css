@@ -8208,11 +8208,11 @@ form textarea:focus {
 /* Slidein */
 .slidein {
     display: none;
-    position: absolute;
+    position: fixed;
     background: #f5f5f5;
     width: 450px;
     height: auto;
-    top: 0;
+    top: 20%;
     right: 0;
     padding: 40px 0 40px 40px;
     z-index: 999;
